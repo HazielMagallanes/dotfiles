@@ -1,0 +1,55 @@
+* {
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 13px;
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+}
+
+window#waybar {
+  background: rgba(20, 20, 20, 0.4); 
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0;
+  color: #e5e9f0;
+}
+
+/* Module containers */
+.modules-left, .modules-center, .modules-right {
+  background: rgba(45, 45, 45, 0.25);
+  border-radius: 12px;
+  margin: 4px 6px;
+  padding: 2px 10px;
+}
+
+/* Workspace styling */
+#workspaces button {
+  padding: 0 10px;
+  color: #d8dee9;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  box-shadow: none;
+}
+
+#workspaces button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+  text-shadow: none;
+  outline: none;
+}
+
+/* The modern targeting class for the current workspace */
+#workspaces button.active {
+  color: #88c0d0;
+  background: rgba(136, 192, 208, 0.15);
+  font-weight: bold;
+  box-shadow: none;
+}
+
+/* Specific colors */
+#network { color: #88c0d0; padding: 0 10px; }
+#clock { color: #a3be8c; padding: 0 10px; }
+#pulseaudio { color: #ebcb8b; padding: 0 10px; }
+#memory { color: #77b950; padding: 0 10px; }
+#temperature.cpu { color: #d08770; padding: 0 10px; }
+#temperature.gpu { color: #bf616a; padding: 0 10px; }
+#custom-audiotoggle { color: #ebcb8b; padding: 0 10px; }

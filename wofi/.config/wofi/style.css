@@ -1,0 +1,59 @@
+* {
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
+
+window {
+  margin: 0px;
+  /* Squared outer edges, matching your bar */
+  border-radius: 0px; 
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* Slightly more opaque than Waybar so text remains readable */
+  background-color: rgba(20, 20, 20, 0.8); 
+}
+
+#input {
+  margin: 15px;
+  padding: 10px 15px;
+  /* Rounded inner elements */
+  border-radius: 12px;
+  background-color: rgba(45, 45, 45, 0.4);
+  color: #e5e9f0;
+}
+
+#inner-box {
+  margin: 10px;
+  background-color: transparent;
+}
+
+#outer-box {
+  margin: 5px;
+  background-color: transparent;
+}
+
+#scroll {
+  margin: 0px;
+}
+
+#text {
+  margin: 5px 10px;
+  color: #d8dee9;
+}
+
+#entry {
+  padding: 5px;
+  margin-bottom: 2px;
+}
+
+#entry:selected {
+  /* Matches your active workspace styling */
+  background-color: rgba(136, 192, 208, 0.15);
+  border-radius: 8px;
+}
+
+#entry:selected #text {
+  font-weight: bold;
+  color: #88c0d0;
+}
