@@ -1,0 +1,10 @@
+hl.env("WLR_NO_HARDWARE_CURSORS", "1")
+hl.env("XCURSOR_SIZE", "24")
+hl.env("HYPRCURSOR_SIZE", "24")
+
+require("lua.monitors")
+require("lua.autostart")
+require("lua.appearance")
+require("lua.input")
+require("lua.rules")
+require("lua.keybinds")
